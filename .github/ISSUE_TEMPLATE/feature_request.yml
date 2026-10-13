@@ -1,0 +1,35 @@
+name: Feature request
+description: Propose a product, shared contract or factory capability.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and affected user
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome and measurable acceptance criteria
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Change type
+      options:
+        - Product workspace
+        - Shared package / contract
+        - Launch kit
+        - CI / security / governance
+        - Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Security, privacy, rights or regulatory considerations
+    validations:
+      required: true
