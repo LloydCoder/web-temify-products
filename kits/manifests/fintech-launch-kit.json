@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kitKey": "fintech-launch-kit",
+  "name": "Fintech Launch Kit",
+  "maturity": "planned",
+  "components": [],
+  "compatibility": {},
+  "validation": {
+    "compositionTestCommand": "not_admitted_until_components_exist",
+    "securityReviewRequired": true
+  }
+}
