@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://web-temify.com/schemas/dependency.v1.json",
+  "title": "Web-Temify product dependency edge",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "from",
+    "to",
+    "kind",
+    "versionRange"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "from": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "to": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "kind": {
+      "enum": [
+        "runtime",
+        "development",
+        "optional",
+        "kit-composition"
+      ]
+    },
+    "versionRange": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
