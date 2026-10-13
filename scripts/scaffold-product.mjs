@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   description: "A Web-Temify product scaffold. Replace this copy before release.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
       <body>{children}</body>
