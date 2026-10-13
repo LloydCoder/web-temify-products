@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://web-temify.com/schemas/product-manifest.v1.json",
+  "title": "Web-Temify Product Manifest",
+  "description": "Manifest for a product workspace. A manifest alone is not release approval.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "productKey", "name", "tier", "kind", "maturity", "source", "runtime", "commands", "compatibility", "license", "rights", "security"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "productKey": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "minLength": 2, "maxLength": 100 },
+    "name": { "type": "string", "minLength": 1, "maxLength": 180 },
+    "tier": { "enum": ["Tier 1", "Tier 4", "Tier 5", "Tier 2", "Tier 3"] },
+    "kind": { "enum": ["standalone", "launch-kit"] },
+    "maturity": { "enum": ["planned", "scaffolded", "in_development", "verification", "release_candidate", "released", "withdrawn"] },
+    "source": { "type": "object", "additionalProperties": false, "required": ["repository", "commit"], "properties": {
+      "repository": { "type": "string", "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$" },
+      "commit": { "type": "string", "pattern": "^[a-f0-9]{40}$" }
+    }},
+    "runtime": { "type": "object", "additionalProperties": false, "required": ["framework", "version"], "properties": {
+      "framework": { "type": "string", "minLength": 1, "maxLength": 100 },
+      "version": { "type": "string", "minLength": 1, "maxLength": 100 }
+    }},
+    "commands": { "type": "object", "additionalProperties": false, "required": ["build", "test", "lint", "typecheck"], "properties": {
+      "build": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "test": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "lint": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "typecheck": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "security": { "type": "string", "maxLength": 300 }
+    }},
+    "compatibility": { "type": "object", "additionalProperties": { "type": ["string", "number", "boolean", "array", "object", "null"] } },
+    "license": { "type": "object", "additionalProperties": false, "required": ["licenseType", "thirdPartyNotices"], "properties": {
+      "licenseType": { "type": "string", "minLength": 1, "maxLength": 100 },
+      "thirdPartyNotices": { "type": "string", "minLength": 1, "maxLength": 2048 }
+    }},
+    "rights": { "type": "object", "additionalProperties": false, "required": ["status", "evidenceReference"], "properties": {
+      "status": { "enum": ["unverified", "declared", "under_review", "verified", "rejected"] },
+      "evidenceReference": { "type": ["string", "null"], "maxLength": 2048 }
+    }},
+    "security": { "type": "object", "additionalProperties": false, "required": ["dataClassification", "threatModel", "scanStatus"], "properties": {
+      "dataClassification": { "enum": ["none", "public", "internal", "confidential", "regulated"] },
+      "threatModel": { "type": "string", "minLength": 1, "maxLength": 2048 },
+      "scanStatus": { "enum": ["not_started", "pending", "passed", "failed", "exception_approved"] }
+    }}
+  }
+}
