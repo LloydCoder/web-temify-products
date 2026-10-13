@@ -13,7 +13,8 @@
     "coreScope": "39 standalone products and 4 launch kits",
     "additionalCandidates": "18 candidates are explicitly excluded from this core inventory until the core 43 are completed and validated",
     "releaseRule": "A catalogue entry is not proof that a product exists, builds, passes tests, has verified rights, or is safe to sell.",
-    "stableIds": "No stable product IDs or canonical slugs have been approved yet."
+    "stableIds": "Canonical productKey values are stable, unique, lowercase kebab-case identifiers derived from product names in this inventory revision; never recycle a key. Key changes require a reviewed migration.",
+    "canonicalKeyRule": "Normalize product names to lowercase kebab-case, convert ampersand to 'and', slash to separator, preserve meaningful acronyms, and assert uniqueness in CI."
   },
   "products": [
     {
@@ -24,7 +25,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "courier-and-logistics-template"
     },
     {
       "sequence": 2,
@@ -34,7 +36,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "loan-and-lending-template"
     },
     {
       "sequence": 3,
@@ -44,7 +47,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "neobank-and-digital-banking-template"
     },
     {
       "sequence": 4,
@@ -54,7 +58,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "digital-agency-template"
     },
     {
       "sequence": 5,
@@ -64,7 +69,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "saas-landing-page-template"
     },
     {
       "sequence": 6,
@@ -74,7 +80,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "portfolio-and-freelancer-template"
     },
     {
       "sequence": 7,
@@ -84,7 +91,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "saas-starter-kit"
     },
     {
       "sequence": 8,
@@ -94,7 +102,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "web3-dapp-kit"
     },
     {
       "sequence": 9,
@@ -104,7 +113,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "fintech-launch-kit"
     },
     {
       "sequence": 10,
@@ -114,7 +124,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "agency-starter-kit"
     },
     {
       "sequence": 11,
@@ -124,7 +135,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "islamic-finance-and-halal-banking"
     },
     {
       "sequence": 12,
@@ -134,7 +146,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "agritech-and-farm-marketplace"
     },
     {
       "sequence": 13,
@@ -144,7 +157,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "isp-and-telecom-template"
     },
     {
       "sequence": 14,
@@ -154,7 +168,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "solar-energy-template"
     },
     {
       "sequence": 15,
@@ -164,7 +179,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "ride-hailing-landing-page"
     },
     {
       "sequence": 16,
@@ -174,7 +190,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "ajo-esusu-cooperative-savings-script"
     },
     {
       "sequence": 17,
@@ -184,7 +201,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "p2p-crypto-platform-script"
     },
     {
       "sequence": 18,
@@ -194,7 +212,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "online-banking-script"
     },
     {
       "sequence": 19,
@@ -204,7 +223,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "loan-management-script"
     },
     {
       "sequence": 20,
@@ -214,7 +234,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "nft-marketplace"
     },
     {
       "sequence": 21,
@@ -224,7 +245,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "real-estate-template"
     },
     {
       "sequence": 22,
@@ -234,7 +256,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "invoice-and-billing-script"
     },
     {
       "sequence": 23,
@@ -244,7 +267,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "e-commerce-template"
     },
     {
       "sequence": 24,
@@ -254,7 +278,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "restaurant-template"
     },
     {
       "sequence": 25,
@@ -264,7 +289,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "hospital-template"
     },
     {
       "sequence": 26,
@@ -274,7 +300,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "school-template"
     },
     {
       "sequence": 27,
@@ -284,7 +311,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "saas-dashboard-template"
     },
     {
       "sequence": 28,
@@ -294,7 +322,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "point-of-sale-pos-script"
     },
     {
       "sequence": 29,
@@ -304,7 +333,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "centralized-exchange-cex-lite"
     },
     {
       "sequence": 30,
@@ -314,7 +344,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "defi-dashboard"
     },
     {
       "sequence": 31,
@@ -324,7 +355,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "fleet-management-system"
     },
     {
       "sequence": 32,
@@ -334,7 +366,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "crowdfunding-script"
     },
     {
       "sequence": 33,
@@ -344,7 +377,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "crypto-trading-dashboard"
     },
     {
       "sequence": 34,
@@ -354,7 +388,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "web3-dapp-landing-page"
     },
     {
       "sequence": 35,
@@ -364,7 +399,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "blockchain-agency-template"
     },
     {
       "sequence": 36,
@@ -374,7 +410,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "token-and-ico-script"
     },
     {
       "sequence": 37,
@@ -384,7 +421,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "event-ticketing-template"
     },
     {
       "sequence": 38,
@@ -394,7 +432,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "multi-vendor-marketplace"
     },
     {
       "sequence": 39,
@@ -404,7 +443,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "dao-governance-template"
     },
     {
       "sequence": 40,
@@ -414,7 +454,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "lms-lite-learning-management-system"
     },
     {
       "sequence": 41,
@@ -424,7 +465,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "pharmacy-template"
     },
     {
       "sequence": 42,
@@ -434,7 +476,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "construction-template"
     },
     {
       "sequence": 43,
@@ -444,7 +487,8 @@
       "status": "planned",
       "implementationEvidence": null,
       "rightsEvidence": null,
-      "latestRelease": null
+      "latestRelease": null,
+      "productKey": "travel-template"
     }
   ]
 }

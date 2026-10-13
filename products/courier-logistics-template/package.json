@@ -1,0 +1,11 @@
+{
+  "name": "@web-temify/courier-logistics-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Responsive courier and logistics marketing website template with a demo-only tracking interaction",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

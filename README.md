@@ -12,7 +12,7 @@ The 18 additional product candidates are intentionally excluded until the core 4
 - `catalog/products.json`: canonical inventory and agreed tier order.
 - `docs/product-lifecycle.md`: product maturity, release evidence and review gates.
 - `docs/architecture.md`: repository boundaries and marketplace/Tinlance contracts.
-- `products/`: product workspaces admitted only after their source and release contracts are approved.
+- `products/`: admitted product workspaces; the first Tier 1 workspace is a scaffolded courier/logistics site template with a demo-only shipment tracker.
 - `scripts/validate-catalog.mjs`: deterministic inventory validation.
 
 ## Required checks
@@ -20,6 +20,7 @@ The 18 additional product candidates are intentionally excluded until the core 4
 - `node scripts/validate-catalog.mjs`
 - `pnpm install --frozen-lockfile`
 - `pnpm catalog:validate`
+- `pnpm products:check`
 
 ## Repository boundaries
 

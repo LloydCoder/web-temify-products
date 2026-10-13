@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "productKey": "courier-logistics-template",
+  "name": "Courier & Logistics Template",
+  "tier": "Tier 1",
+  "kind": "standalone",
+  "maturity": "scaffolded",
+  "source": {
+    "repository": "https://github.com/LloydCoder/web-temify-products",
+    "commit": null
+  },
+  "runtime": {
+    "framework": "Static HTML, CSS and browser JavaScript",
+    "version": "HTML Living Standard; modern evergreen browsers"
+  },
+  "commands": {
+    "build": "pnpm build",
+    "test": "pnpm test",
+    "lint": "not_applicable_no_runtime_dependencies",
+    "typecheck": "not_applicable_no_typeScript"
+  },
+  "compatibility": {
+    "responsive": true,
+    "backend": "none",
+    "tracking": "illustrative local demo records only",
+    "externalServices": "none"
+  },
+  "license": {
+    "licenseType": "Web-Temify commercial license pending approval",
+    "thirdPartyNotices": "No third-party images, fonts, icons or runtime libraries are bundled in this scaffold."
+  },
+  "rights": {
+    "status": "declared",
+    "evidenceReference": null
+  },
+  "security": {
+    "dataClassification": "none",
+    "threatModel": "Static marketing template. Tracking interaction reads only a local demo identifier and renders fixed demo records; it makes no network requests and stores no personal data.",
+    "scanStatus": "not_started"
+  }
+}
