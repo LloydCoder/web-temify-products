@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://web-temify.com/schemas/pricing.v1.json",
+  "title": "Web-Temify provisional pricing metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "currency",
+    "model",
+    "status",
+    "approvalReference"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "model": {
+      "enum": [
+        "one_time",
+        "subscription",
+        "usage_based",
+        "quote_only",
+        "free"
+      ]
+    },
+    "status": {
+      "enum": [
+        "provisional",
+        "approved",
+        "retired"
+      ]
+    },
+    "amountMinor": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "interval": {
+      "enum": [
+        "month",
+        "year",
+        "none"
+      ]
+    },
+    "approvalReference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "approved"
+          }
+        },
+        "required": [
+          "status"
+        ]
+      },
+      "then": {
+        "properties": {
+          "approvalReference": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}
