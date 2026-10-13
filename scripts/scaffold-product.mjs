@@ -20,6 +20,7 @@ if (!["Tier 1", "Tier 2", "Tier 3", "Tier 4", "Tier 5"].includes(tier)) throw ne
 if (!["standalone", "launch-kit"].includes(kind)) throw new Error("Unsupported --kind.");
 if (kind !== "standalone") throw new Error("Launch kits must use a kit manifest and composition workflow, not a standalone app scaffold.");
 
+const escapeJsx = (value) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 const root = resolve(process.cwd(), "products", key);
 const files = new Map([
   ["package.json", JSON.stringify({
@@ -51,7 +52,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <main>
       <p className="eyebrow">Web-Temify · ${key}</p>
-      <h1>${name}</h1>
+      <h1>${escapeJsx(name)}</h1>
       <p>This is a development scaffold, not a released product.</p>
     </main>
   );
