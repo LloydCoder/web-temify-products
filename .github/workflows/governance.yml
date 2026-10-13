@@ -38,6 +38,16 @@ jobs:
         run: node scripts/validate-catalog.mjs
       - name: Validate admitted product manifests and release gates
         run: node scripts/validate-product-manifests.mjs
+      - name: Test product scaffolder
+        run: node --test tests/*.test.mjs
+      - name: Validate launch-kit manifests against composition schema
+        shell: bash
+        run: |
+          set -euo pipefail
+          for manifest in kits/manifests/*.json; do
+            echo "Validating $manifest"
+            pnpm dlx ajv-cli@5.0.0 validate --spec=draft2020 -s schemas/launch-kit-manifest.schema.json -d "$manifest"
+          done
       - name: Compile every JSON Schema as Draft 2020-12
         shell: bash
         run: |
