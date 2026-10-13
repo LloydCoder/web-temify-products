@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://web-temify.com/schemas/registry-lock.v1.json",
+  "title": "Web-Temify generated product registry lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "generatedFrom",
+    "catalogueStatus",
+    "counts",
+    "entries"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "generatedFrom": {
+      "const": "catalog/products.json"
+    },
+    "catalogueStatus": {
+      "const": "planned-not-release-evidence"
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "total",
+        "standalone",
+        "launchKits",
+        "admittedStandaloneWorkspaces",
+        "manifestsPresent",
+        "released"
+      ],
+      "properties": {
+        "total": {
+          "const": 43
+        },
+        "standalone": {
+          "const": 39
+        },
+        "launchKits": {
+          "const": 4
+        },
+        "admittedStandaloneWorkspaces": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 39
+        },
+        "manifestsPresent": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 43
+        },
+        "released": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 43
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 43,
+      "maxItems": 43,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sequence",
+          "productKey",
+          "name",
+          "tier",
+          "kind",
+          "catalogueStatus",
+          "maturity",
+          "manifestPath",
+          "sourcePath",
+          "releaseEvidence"
+        ],
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 43
+          },
+          "productKey": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tier": {
+            "enum": [
+              "Tier 1",
+              "Tier 4",
+              "Tier 5",
+              "Tier 2",
+              "Tier 3"
+            ]
+          },
+          "kind": {
+            "enum": [
+              "standalone",
+              "launch-kit"
+            ]
+          },
+          "catalogueStatus": {
+            "const": "planned"
+          },
+          "maturity": {
+            "enum": [
+              "planned",
+              "scaffolded",
+              "in_development",
+              "verification",
+              "release_candidate",
+              "released",
+              "withdrawn"
+            ]
+          },
+          "manifestPath": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sourcePath": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "releaseEvidence": {
+            "enum": [
+              "not_available",
+              "available"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

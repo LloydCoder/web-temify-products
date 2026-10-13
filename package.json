@@ -12,6 +12,8 @@
     "catalog:check": "node scripts/validate-catalog.mjs",
     "quality:check": "pnpm catalog:validate",
     "products:check": "node scripts/validate-product-manifests.mjs && pnpm --filter @web-temify/courier-logistics-template validate && pnpm --filter @web-temify/courier-logistics-template test && pnpm --filter @web-temify/courier-logistics-template build",
-    "factory:test": "node --test tests/*.test.mjs"
+    "factory:test": "node --test tests/*.test.mjs",
+    "registry:generate": "node scripts/generate-registry-lock.mjs",
+    "registry:check": "node scripts/generate-registry-lock.mjs --check"
   }
 }
