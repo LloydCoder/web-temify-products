@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kitKey": "web3-dapp-kit",
+  "name": "Web3 dApp Kit",
+  "maturity": "planned",
+  "components": [],
+  "compatibility": {},
+  "validation": {
+    "compositionTestCommand": "not_admitted_until_components_exist",
+    "securityReviewRequired": true
+  }
+}
