@@ -47,3 +47,8 @@ Each product workspace must eventually include:
 ## Security-specific review
 
 Crypto, financial, health, identity, pharmacy, crowdfunding, token/ICO, exchange and other high-impact products require separate jurisdiction, legal, threat-model and security review before release. Their presence in the catalogue does not authorize a launch or imply regulatory compliance. No real customer funds, real credentials, medical decisions or regulated transactions may be used in demo fixtures.
+
+
+## Canonical product keys and first admitted workspace
+
+The canonical inventory now assigns a unique `productKey` to every planned entry. Keys are lowercase kebab-case, stable across title copy edits, never recycled, and changed only through a reviewed migration. CI rejects missing or duplicate keys. The first admitted workspace is `courier-logistics-template` (Tier 1, sequence 1); its `scaffolded` maturity is explicit and must not be treated as release evidence. Development manifests may use a null source commit; a `released` manifest must bind to an immutable 40-character source commit, verified rights and a passed security scan.

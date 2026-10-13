@@ -10,6 +10,7 @@
   "scripts": {
     "catalog:validate": "node scripts/validate-catalog.mjs",
     "catalog:check": "node scripts/validate-catalog.mjs",
-    "quality:check": "pnpm catalog:validate"
+    "quality:check": "pnpm catalog:validate",
+    "products:check": "node scripts/validate-product-manifests.mjs && pnpm --filter @web-temify/courier-logistics-template validate && pnpm --filter @web-temify/courier-logistics-template test && pnpm --filter @web-temify/courier-logistics-template build"
   }
 }

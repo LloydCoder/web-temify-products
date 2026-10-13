@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c32">
+  <meta name="description" content="A polished, responsive courier and logistics website template with a demo shipment-tracking interaction.">
+  <title>Northstar Logistics — Move business forward</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Northstar Logistics home">
+      <span class="brand-mark" aria-hidden="true">N</span>
+      <span>northstar<span class="brand-light"> logistics</span></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="sr-only">Toggle navigation</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+      <a href="#services">Services</a><a href="#how-it-works">How it works</a><a href="#network">Our network</a>
+      <a class="nav-cta" href="#tracking">Track shipment <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Logistics that keeps you moving</p>
+        <h1 id="hero-title">Move business<br><span>forward.</span></h1>
+        <p class="hero-intro">From the first mile to the final doorstep, we make every delivery feel simple. Reliable shipping for ambitious businesses and the people they serve.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#services">Explore our services <span aria-hidden="true">↗</span></a><a class="text-link" href="#how-it-works">See how it works <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="status-pulse" aria-hidden="true"></span><span>One clear view of every delivery</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a parcel moving through a delivery network" role="img">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="route-line route-line-one"></div><div class="route-line route-line-two"></div>
+        <div class="map-pin pin-one"><span></span></div><div class="map-pin pin-two"><span></span></div><div class="map-pin pin-three"><span></span></div>
+        <div class="parcel"><div class="parcel-top"></div><div class="parcel-front"><span class="parcel-tape"></span><span class="parcel-label">HANDLE<br>WITH CARE</span></div></div>
+        <div class="floating-card delivery-card"><span class="card-icon" aria-hidden="true">↗</span><div><strong>On the move</strong><small>Shipment journey</small></div><span class="mini-check" aria-hidden="true">✓</span></div>
+        <div class="floating-card route-card"><span class="route-icon" aria-hidden="true">⌖</span><div><strong>Every mile, visible</strong><small>Track from pickup to arrival</small></div></div>
+        <p class="art-caption">A better way to deliver.</p>
+      </div>
+      <div class="hero-bottom"><span>Built for businesses that keep the world moving</span><div class="trust-words"><span>Retail</span><span>Commerce</span><span>Enterprise</span><span>People</span></div></div>
+    </section>
+
+    <section class="tracking-section" id="tracking" aria-labelledby="tracking-title">
+      <div class="tracking-intro"><p class="eyebrow">Shipment visibility</p><h2 id="tracking-title">Where is your<br>delivery headed?</h2><p>Enter a sample reference to preview the tracking experience. This template uses local demo records only.</p></div>
+      <form class="tracking-form" id="tracking-form">
+        <label for="tracking-number">Tracking number</label>
+        <div class="tracking-input-row"><input id="tracking-number" name="tracking-number" autocomplete="off" autocapitalize="characters" placeholder="e.g. WT-2048" required pattern="WT-[0-9]{4}" aria-describedby="tracking-help"><button class="button button-dark" type="submit">Track parcel <span aria-hidden="true">→</span></button></div>
+        <p id="tracking-help" class="field-help">Try WT-2048 or WT-2050. Demo only; no real shipment data is queried.</p>
+        <div id="tracking-result" class="tracking-result" role="status" aria-live="polite" aria-atomic="true"></div>
+      </form>
+    </section>
+
+    <section class="section services-section" id="services" aria-labelledby="services-title">
+      <div class="section-heading"><div><p class="eyebrow">What we move</p><h2 id="services-title">The right service.<br><span>Every single time.</span></h2></div><p>Flexible logistics for the pace of your business. Start with the essentials and adapt the service mix to your customers.</p></div>
+      <div class="service-grid">
+        <article class="service-card service-featured"><span class="service-number">01 / EXPRESS</span><span class="service-symbol" aria-hidden="true">↗</span><h3>Express delivery</h3><p>Time-sensitive parcels with a clear journey from collection to destination.</p><a href="#contact" class="service-link">Explore express <span aria-hidden="true">→</span></a></article>
+        <article class="service-card"><span class="service-number">02 / FREIGHT</span><span class="service-symbol" aria-hidden="true">▤</span><h3>Freight & cargo</h3><p>Thoughtful planning for larger shipments, regular routes and business-critical goods.</p><a href="#contact" class="service-link">Explore freight <span aria-hidden="true">→</span></a></article>
+        <article class="service-card"><span class="service-number">03 / E-COMMERCE</span><span class="service-symbol" aria-hidden="true">□</span><h3>E-commerce fulfilment</h3><p>Delivery experiences that help online stores turn checkout into a lasting relationship.</p><a href="#contact" class="service-link">Explore fulfilment <span aria-hidden="true">→</span></a></article>
+      </div>
+    </section>
+
+    <section class="process-section" id="how-it-works" aria-labelledby="process-title">
+      <div class="process-heading"><p class="eyebrow">A simpler journey</p><h2 id="process-title">From here to there.<br><span>Without the guesswork.</span></h2><p>Good logistics is more than moving a parcel. It is making the next step clear for everyone.</p></div>
+      <ol class="process-list">
+        <li><span class="process-count">01</span><div><h3>Book with confidence</h3><p>Share the shipment details and choose a service that fits your timeline.</p></div><span class="process-arrow" aria-hidden="true">↗</span></li>
+        <li><span class="process-count">02</span><div><h3>Follow the journey</h3><p>Keep your team and recipients informed with one easy-to-follow status.</p></div><span class="process-arrow" aria-hidden="true">↗</span></li>
+        <li><span class="process-count">03</span><div><h3>Deliver the promise</h3><p>Close the loop with delivery confirmation and a better customer experience.</p></div><span class="process-arrow" aria-hidden="true">↗</span></li>
+      </ol>
+    </section>
+
+    <section class="network-section" id="network" aria-labelledby="network-title">
+      <div class="network-visual"><div class="network-grid" aria-hidden="true"></div><div class="network-ring ring-a"></div><div class="network-ring ring-b"></div><span class="network-node node-a">A</span><span class="network-node node-b">B</span><span class="network-node node-c">C</span><span class="network-node node-d">D</span><div class="network-center"><span aria-hidden="true">✳</span><strong>Connected<br>by design</strong></div></div>
+      <div class="network-copy"><p class="eyebrow">A connected network</p><h2 id="network-title">Closer to your<br><span>next destination.</span></h2><p>Build trust at every handoff with clear communication, flexible delivery options and a logistics experience designed around people.</p><a href="#contact" class="button button-primary">Talk to our team <span aria-hidden="true">↗</span></a><p class="template-note">Illustrative marketing copy — replace service coverage and operational claims with verified business information before publication.</p></div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">Let’s get moving</p><h2 id="contact-title">Your next delivery<br>starts with a conversation.</h2></div><a class="button button-light" href="mailto:hello@example.com?subject=Logistics%20enquiry">Start an enquiry <span aria-hidden="true">↗</span></a><p class="contact-note">Template placeholder: replace this email address with your verified business contact.</p></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">N</span><span>northstar<span class="brand-light"> logistics</span></span></a><p>Built to keep business moving.</p><div class="footer-links"><a href="#services">Services</a><a href="#tracking">Track shipment</a><a href="#contact">Contact</a></div><small>© <span id="current-year">2026</span> Northstar Logistics. Demo brand — replace before launch.</small></footer>
+</body>
+</html>
