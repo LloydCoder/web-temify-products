@@ -11,7 +11,7 @@ test("template provides semantic, accessible page structure", async () => {
   const html = await read("src/index.html");
   assert.match(html, /<html lang="en">/);
   assert.match(html, /<main id="main">/);
-  assert.match(html, /<nav id="primary-navigation" aria-label="Main navigation">/);
+  assert.match(html, /<nav id="primary-navigation"[^>]*aria-label="Main navigation">/);
   assert.match(html, /aria-live="polite"/);
   assert.match(html, /<a class="skip-link" href="#main">/);
 });
