@@ -14,7 +14,7 @@
     "additionalCandidates": "18 candidates are explicitly excluded from this core inventory until the core 43 are completed and validated",
     "releaseRule": "A catalogue entry is not proof that a product exists, builds, passes tests, has verified rights, or is safe to sell.",
     "stableIds": "Canonical productKey values are stable, unique, lowercase kebab-case identifiers derived from product names in this inventory revision; never recycle a key. Key changes require a reviewed migration.",
-    "canonicalKeyRule": "Normalize product names to lowercase kebab-case, convert ampersand to 'and', slash to separator, preserve meaningful acronyms, and assert uniqueness in CI."
+    "canonicalKeyRule": "Normalize names to lowercase kebab-case; treat ampersands, slashes and punctuation as separators; preserve meaningful words/acronyms; assert uniqueness in CI."
   },
   "products": [
     {
@@ -26,7 +26,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "courier-and-logistics-template"
+      "productKey": "courier-logistics-template"
     },
     {
       "sequence": 2,
@@ -37,7 +37,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "loan-and-lending-template"
+      "productKey": "loan-lending-template"
     },
     {
       "sequence": 3,
@@ -48,7 +48,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "neobank-and-digital-banking-template"
+      "productKey": "neobank-digital-banking-template"
     },
     {
       "sequence": 4,
@@ -81,7 +81,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "portfolio-and-freelancer-template"
+      "productKey": "portfolio-freelancer-template"
     },
     {
       "sequence": 7,
@@ -136,7 +136,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "islamic-finance-and-halal-banking"
+      "productKey": "islamic-finance-halal-banking"
     },
     {
       "sequence": 12,
@@ -147,7 +147,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "agritech-and-farm-marketplace"
+      "productKey": "agritech-farm-marketplace"
     },
     {
       "sequence": 13,
@@ -158,7 +158,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "isp-and-telecom-template"
+      "productKey": "isp-telecom-template"
     },
     {
       "sequence": 14,
@@ -257,7 +257,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "invoice-and-billing-script"
+      "productKey": "invoice-billing-script"
     },
     {
       "sequence": 23,
@@ -411,7 +411,7 @@
       "implementationEvidence": null,
       "rightsEvidence": null,
       "latestRelease": null,
-      "productKey": "token-and-ico-script"
+      "productKey": "token-ico-script"
     },
     {
       "sequence": 37,
