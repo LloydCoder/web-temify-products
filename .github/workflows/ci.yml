@@ -1,0 +1,31 @@
+name: Product monorepo CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: products-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  catalogue:
+    name: Catalogue and policy validation
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Validate canonical catalogue
+        run: node scripts/validate-catalog.mjs
+      - name: Verify no accidental secret files
+        shell: bash
+        run: |
+          if git ls-files | grep -E '(^|/)(\.env($|\.)|.*\.pem$|.*\.key$|id_rsa$|credentials\.json$)'; then
+            echo "Potential secret-bearing file is tracked" >&2
+            exit 1
+          fi
