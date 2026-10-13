@@ -36,6 +36,8 @@ jobs:
         run: pnpm catalog:validate
       - name: Build and test admitted product workspaces
         run: pnpm products:check
+      - name: Validate product manifests against catalogue and lifecycle contract
+        run: node scripts/validate-product-manifests.mjs
       - name: Verify product manifest schema is valid JSON
         run: node -e "JSON.parse(require('node:fs').readFileSync('schemas/product-manifest.schema.json', 'utf8'))"
       - name: Verify no accidental secret files
