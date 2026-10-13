@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "catalogueStatus": "planned-not-release-evidence",
+  "sourceOfTruth": "LloydCoder/web-temify-products",
+  "policy": {
+    "order": [
+      "Tier 1",
+      "Tier 4",
+      "Tier 5",
+      "Tier 2",
+      "Tier 3"
+    ],
+    "coreScope": "39 standalone products and 4 launch kits",
+    "additionalCandidates": "18 candidates are explicitly excluded from this core inventory until the core 43 are completed and validated",
+    "releaseRule": "A catalogue entry is not proof that a product exists, builds, passes tests, has verified rights, or is safe to sell.",
+    "stableIds": "No stable product IDs or canonical slugs have been approved yet."
+  },
+  "products": [
+    {
+      "sequence": 1,
+      "tier": "Tier 1",
+      "name": "Courier & Logistics Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 2,
+      "tier": "Tier 1",
+      "name": "Loan & Lending Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 3,
+      "tier": "Tier 1",
+      "name": "NeoBank & Digital Banking Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 4,
+      "tier": "Tier 1",
+      "name": "Digital Agency Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 5,
+      "tier": "Tier 1",
+      "name": "SaaS Landing Page Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 6,
+      "tier": "Tier 1",
+      "name": "Portfolio & Freelancer Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 7,
+      "tier": "Tier 4",
+      "name": "SaaS Starter Kit",
+      "kind": "launch-kit",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 8,
+      "tier": "Tier 4",
+      "name": "Web3 dApp Kit",
+      "kind": "launch-kit",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 9,
+      "tier": "Tier 4",
+      "name": "Fintech Launch Kit",
+      "kind": "launch-kit",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 10,
+      "tier": "Tier 4",
+      "name": "Agency Starter Kit",
+      "kind": "launch-kit",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 11,
+      "tier": "Tier 5",
+      "name": "Islamic Finance & Halal Banking",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 12,
+      "tier": "Tier 5",
+      "name": "Agritech & Farm Marketplace",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 13,
+      "tier": "Tier 5",
+      "name": "ISP & Telecom Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 14,
+      "tier": "Tier 5",
+      "name": "Solar Energy Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 15,
+      "tier": "Tier 5",
+      "name": "Ride-Hailing Landing Page",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 16,
+      "tier": "Tier 5",
+      "name": "Ajo / Esusu Cooperative Savings Script",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 17,
+      "tier": "Tier 2",
+      "name": "P2P Crypto Platform Script",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 18,
+      "tier": "Tier 2",
+      "name": "Online Banking Script",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 19,
+      "tier": "Tier 2",
+      "name": "Loan Management Script",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 20,
+      "tier": "Tier 2",
+      "name": "NFT Marketplace",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 21,
+      "tier": "Tier 2",
+      "name": "Real Estate Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 22,
+      "tier": "Tier 2",
+      "name": "Invoice & Billing Script",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 23,
+      "tier": "Tier 2",
+      "name": "E-commerce Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 24,
+      "tier": "Tier 2",
+      "name": "Restaurant Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 25,
+      "tier": "Tier 2",
+      "name": "Hospital Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 26,
+      "tier": "Tier 2",
+      "name": "School Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 27,
+      "tier": "Tier 2",
+      "name": "SaaS Dashboard Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 28,
+      "tier": "Tier 2",
+      "name": "Point-of-Sale (POS) Script",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 29,
+      "tier": "Tier 3",
+      "name": "Centralized Exchange (CEX) Lite",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 30,
+      "tier": "Tier 3",
+      "name": "DeFi Dashboard",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 31,
+      "tier": "Tier 3",
+      "name": "Fleet Management System",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 32,
+      "tier": "Tier 3",
+      "name": "Crowdfunding Script",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 33,
+      "tier": "Tier 3",
+      "name": "Crypto Trading Dashboard",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 34,
+      "tier": "Tier 3",
+      "name": "Web3 dApp Landing Page",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 35,
+      "tier": "Tier 3",
+      "name": "Blockchain Agency Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 36,
+      "tier": "Tier 3",
+      "name": "Token & ICO Script",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 37,
+      "tier": "Tier 3",
+      "name": "Event Ticketing Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 38,
+      "tier": "Tier 3",
+      "name": "Multi-Vendor Marketplace",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 39,
+      "tier": "Tier 3",
+      "name": "DAO Governance Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 40,
+      "tier": "Tier 3",
+      "name": "LMS Lite (Learning Management System)",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 41,
+      "tier": "Tier 3",
+      "name": "Pharmacy Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 42,
+      "tier": "Tier 3",
+      "name": "Construction Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    },
+    {
+      "sequence": 43,
+      "tier": "Tier 3",
+      "name": "Travel Template",
+      "kind": "standalone",
+      "status": "planned",
+      "implementationEvidence": null,
+      "rightsEvidence": null,
+      "latestRelease": null
+    }
+  ]
+}

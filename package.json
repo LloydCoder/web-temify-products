@@ -1,0 +1,15 @@
+{
+  "name": "web-temify-products",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Authoritative source workspace and release governance for Web-Temify products",
+  "packageManager": "pnpm@10.18.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "catalog:validate": "node scripts/validate-catalog.mjs",
+    "catalog:check": "node scripts/validate-catalog.mjs",
+    "quality:check": "pnpm catalog:validate"
+  }
+}
