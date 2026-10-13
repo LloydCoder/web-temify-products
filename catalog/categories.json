@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "categories": [
+    {
+      "id": "business",
+      "label": "Business & Operations"
+    },
+    {
+      "id": "finance",
+      "label": "Finance & Fintech"
+    },
+    {
+      "id": "commerce",
+      "label": "Commerce & Marketplaces"
+    },
+    {
+      "id": "health",
+      "label": "Health & Pharmacy"
+    },
+    {
+      "id": "education",
+      "label": "Education & Learning"
+    },
+    {
+      "id": "web3",
+      "label": "Web3 & Blockchain"
+    },
+    {
+      "id": "mobility",
+      "label": "Logistics & Mobility"
+    },
+    {
+      "id": "industry",
+      "label": "Industry & Infrastructure"
+    }
+  ]
+}

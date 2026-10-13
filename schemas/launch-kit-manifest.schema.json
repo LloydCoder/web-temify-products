@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://web-temify.com/schemas/launch-kit-manifest.v1.json",
+  "title": "Web-Temify launch-kit composition manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "kitKey",
+    "name",
+    "maturity",
+    "components",
+    "compatibility",
+    "validation"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "kitKey": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 180
+    },
+    "maturity": {
+      "enum": [
+        "planned",
+        "scaffolded",
+        "in_development",
+        "verification",
+        "release_candidate",
+        "released",
+        "withdrawn"
+      ]
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "productKey",
+          "versionRange"
+        ],
+        "properties": {
+          "productKey": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "versionRange": {
+            "type": "string",
+            "minLength": 1
+          },
+          "optional": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "compositionTestCommand",
+        "securityReviewRequired"
+      ],
+      "properties": {
+        "compositionTestCommand": {
+          "type": "string",
+          "minLength": 1
+        },
+        "securityReviewRequired": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "maturity": {
+            "const": "released"
+          }
+        },
+        "required": [
+          "maturity"
+        ]
+      },
+      "then": {
+        "properties": {
+          "components": {
+            "minItems": 1
+          }
+        }
+      }
+    }
+  ]
+}
