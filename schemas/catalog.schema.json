@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://web-temify.com/schemas/catalog.v1.json",
+  "title": "Web-Temify canonical product catalogue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "catalogueStatus",
+    "sourceOfTruth",
+    "policy",
+    "products"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "catalogueStatus": {
+      "const": "planned-not-release-evidence"
+    },
+    "sourceOfTruth": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy": {
+      "type": "object",
+      "required": [
+        "order",
+        "coreScope",
+        "additionalCandidates",
+        "releaseRule",
+        "stableIds",
+        "canonicalKeyRule"
+      ],
+      "properties": {
+        "order": {
+          "type": "array",
+          "minItems": 5,
+          "maxItems": 5,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "coreScope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "additionalCandidates": {
+          "type": "string",
+          "minLength": 1
+        },
+        "releaseRule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stableIds": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalKeyRule": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "products": {
+      "type": "array",
+      "minItems": 43,
+      "maxItems": 43,
+      "items": {
+        "type": "object",
+        "required": [
+          "sequence",
+          "tier",
+          "name",
+          "kind",
+          "status",
+          "implementationEvidence",
+          "rightsEvidence",
+          "latestRelease",
+          "productKey"
+        ],
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 43
+          },
+          "tier": {
+            "enum": [
+              "Tier 1",
+              "Tier 4",
+              "Tier 5",
+              "Tier 2",
+              "Tier 3"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "standalone",
+              "launch-kit"
+            ]
+          },
+          "status": {
+            "const": "planned"
+          },
+          "implementationEvidence": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "rightsEvidence": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "latestRelease": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "productKey": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  }
+}
