@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "kitKey": "agency-starter-kit",
+  "name": "Agency Starter Kit",
+  "maturity": "planned",
+  "components": [],
+  "compatibility": {},
+  "validation": {
+    "compositionTestCommand": "not_admitted_until_components_exist",
+    "securityReviewRequired": false
+  }
+}
