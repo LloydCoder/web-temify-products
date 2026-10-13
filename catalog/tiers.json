@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "tiers": [
+    {
+      "id": "Tier 1",
+      "purpose": "Initial high-priority standalone products"
+    },
+    {
+      "id": "Tier 4",
+      "purpose": "Launch kits composed from reusable products"
+    },
+    {
+      "id": "Tier 5",
+      "purpose": "Specialized regional and emerging-market products"
+    },
+    {
+      "id": "Tier 2",
+      "purpose": "Core business and fintech products"
+    },
+    {
+      "id": "Tier 3",
+      "purpose": "Advanced, Web3 and specialist products"
+    }
+  ]
+}
