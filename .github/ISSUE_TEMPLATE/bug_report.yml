@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible defect in product source, tooling or governance.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include credentials, customer data, private keys or exploitable vulnerability details."
+  - type: input
+    id: area
+    attributes:
+      label: Product or repository area
+      placeholder: product key, script, schema or workflow
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps and environment
+    validations:
+      required: true

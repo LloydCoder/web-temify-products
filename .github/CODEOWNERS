@@ -1,0 +1,6 @@
+# Product catalogue, schema and release-gate changes require repository owner review.
+* @LloydCoder
+/catalog/ @LloydCoder
+/schemas/ @LloydCoder
+/.github/workflows/ @LloydCoder
+/kits/ @LloydCoder
