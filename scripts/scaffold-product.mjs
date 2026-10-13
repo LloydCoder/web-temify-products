@@ -62,20 +62,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   ["src/app/not-found.tsx", "export default function NotFound() { return <main><h1>Not found</h1><p>The requested page does not exist.</p></main>; }\n"],
   ["src/app/error.tsx", "\"use client\";\n\nimport { useEffect } from \"react\";\n\nexport default function ErrorPage({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {\n  useEffect(() => { console.error(error); }, [error]);\n  return <main><h1>Something went wrong</h1><p>We could not complete this request.</p><button onClick={() => reset()}>Try again</button></main>;\n}\n"],
   ["tests/scaffold.test.mjs", "import test from \"node:test\";\nimport assert from \"node:assert/strict\";\nimport { readFile } from \"node:fs/promises\";\n\ntest(\"product scaffold page is present\", async () => {\n  const page = await readFile(new URL(\"../src/app/page.tsx\", import.meta.url), \"utf8\");\n  assert.match(page, /development scaffold/);\n});\n"],
-  ["README.md", `# ${name}
-
-**Maturity: scaffolded — not a released product.**
-
-## Development
-
-- Install workspace dependencies from the repository root with pnpm.
-- Run `pnpm --filter @web-temify/${key} dev` for local development.
-- Run `pnpm --filter @web-temify/${key} lint`, `typecheck`, `test` and `build` before proposing changes.
-
-## Release blockers
-
-The product manifest is deliberately unverified. Before release, replace placeholder copy and UI, complete product-specific features, verify rights and third-party notices, run security and accessibility testing, document privacy/data handling, attach immutable source and build evidence, and obtain required approvals. Never change maturity to released to make a dashboard appear complete.
-`],
+  ["README.md", "# " + name + "\n\n**Maturity: scaffolded — not a released product.**\n\n## Development\n\n- Install workspace dependencies from the repository root with pnpm.\n- Run pnpm --filter @web-temify/" + key + " dev for local development.\n- Run pnpm --filter @web-temify/" + key + " lint, typecheck, test and build before proposing changes.\n\n## Release blockers\n\nThe product manifest is deliberately unverified. Before release, replace placeholder copy and UI, complete product-specific features, verify rights and third-party notices, run security and accessibility testing, document privacy/data handling, attach immutable source and build evidence, and obtain required approvals. Never change maturity to released to make a dashboard appear complete.\n"],
   [".env.example", "# Add only documented, non-secret variable names here. Never commit credentials.\n"],
   ["product.manifest.json", JSON.stringify({
     schemaVersion: 1, productKey: key, name, tier, kind: "standalone", maturity: "scaffolded",
