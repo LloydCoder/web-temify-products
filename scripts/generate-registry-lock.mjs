@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile, readdir, writeFile } from "node:fs/promises";
+import { readFile, readdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import process from "node:process";
 
