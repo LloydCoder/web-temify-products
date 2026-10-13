@@ -9,6 +9,11 @@ assert.equal(inventory.products.length, 43, "expected 39 standalone products and
 assert.equal(inventory.products.filter((p) => p.kind === "standalone").length, 39);
 assert.equal(inventory.products.filter((p) => p.kind === "launch-kit").length, 4);
 assert.equal(new Set(inventory.products.map((p) => p.name)).size, 43, "duplicate product names found");
+assert.ok(inventory.products.every((p) => typeof p.productKey === "string"), "every product requires a canonical productKey");
+assert.equal(new Set(inventory.products.map((p) => p.productKey)).size, 43, "duplicate product keys found");
+for (const product of inventory.products) {
+  assert.match(product.productKey, /^[a-z0-9]+(?:-[a-z0-9]+)*$/, `invalid productKey for ${product.name}`);
+}
 assert.deepEqual(
   inventory.products.map((p) => p.sequence),
   Array.from({ length: 43 }, (_, index) => index + 1),
@@ -25,4 +30,4 @@ for (const product of inventory.products) {
   assert.equal(product.rightsEvidence, null);
   assert.equal(product.latestRelease, null);
 }
-console.log("Catalogue validation passed: 43 planned entries; no product is represented as shipped.");
+console.log("Catalogue validation passed: 43 planned entries, unique canonical keys, no product represented as shipped.");
