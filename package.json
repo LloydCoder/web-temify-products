@@ -10,10 +10,11 @@
   "scripts": {
     "catalog:validate": "node scripts/validate-catalog.mjs",
     "catalog:check": "node scripts/validate-catalog.mjs",
-    "quality:check": "pnpm catalog:validate",
+    "quality:check": "pnpm catalog:validate && pnpm registry:check && pnpm registry:test",
     "products:check": "node scripts/validate-product-manifests.mjs && pnpm --filter @web-temify/courier-logistics-template validate && pnpm --filter @web-temify/courier-logistics-template test && pnpm --filter @web-temify/courier-logistics-template build",
     "factory:test": "node --test tests/*.test.mjs",
     "registry:generate": "node scripts/generate-registry-lock.mjs",
-    "registry:check": "node scripts/generate-registry-lock.mjs --check"
+    "registry:check": "node scripts/generate-registry-lock.mjs --check",
+    "registry:test": "node --test packages/product-registry/tests/*.test.mjs"
   }
 }
