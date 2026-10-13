@@ -38,6 +38,8 @@ jobs:
         run: node scripts/validate-catalog.mjs
       - name: Validate admitted product manifests and release gates
         run: node scripts/validate-product-manifests.mjs
+      - name: Verify generated registry lock is current
+        run: pnpm registry:check
       - name: Test product scaffolder
         run: node --test tests/*.test.mjs
       - name: Validate launch-kit manifests against composition schema
