@@ -1,0 +1,13 @@
+{
+  "name": "@web-temify/product-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts"
+    }
+  },
+  "description": "Versioned type contracts for Web-Temify product manifests, registry entries and release evidence"
+}

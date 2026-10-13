@@ -40,8 +40,8 @@ jobs:
         run: node scripts/validate-product-manifests.mjs
       - name: Verify generated registry lock is current
         run: pnpm registry:check
-      - name: Test product scaffolder
-        run: node --test tests/*.test.mjs
+      - name: Test product scaffolder and registry runtime
+        run: pnpm quality:check && node --test tests/*.test.mjs
       - name: Validate launch-kit manifests against composition schema
         shell: bash
         run: |

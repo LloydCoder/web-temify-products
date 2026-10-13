@@ -8,4 +8,12 @@ importers:
 
   .: {}
 
+  packages/product-contracts: {}
+
+  packages/product-registry:
+    dependencies:
+      '@web-temify/product-contracts':
+        specifier: workspace:*
+        version: link:../product-contracts
+
   products/courier-logistics-template: {}
