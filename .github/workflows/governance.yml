@@ -1,0 +1,52 @@
+name: Product governance contracts
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: governance-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  schemas:
+    name: JSON Schema 2020-12 and inventory contracts
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.18.0
+          run_install: false
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install reproducibly
+        run: pnpm install --frozen-lockfile
+      - name: Validate canonical catalogue invariants
+        run: node scripts/validate-catalog.mjs
+      - name: Validate admitted product manifests and release gates
+        run: node scripts/validate-product-manifests.mjs
+      - name: Compile every JSON Schema as Draft 2020-12
+        shell: bash
+        run: |
+          set -euo pipefail
+          for schema in schemas/*.schema.json; do
+            echo "Compiling $schema"
+            pnpm dlx ajv-cli@5.0.0 compile --spec=draft2020 -s "$schema"
+          done
+      - name: Validate canonical catalogue against its JSON Schema
+        run: pnpm dlx ajv-cli@5.0.0 validate --spec=draft2020 -s schemas/catalog.schema.json -d catalog/products.json
+      - name: Validate admitted product manifest against its JSON Schema
+        run: pnpm dlx ajv-cli@5.0.0 validate --spec=draft2020 -s schemas/product-manifest.schema.json -d products/courier-logistics-template/product.manifest.json
